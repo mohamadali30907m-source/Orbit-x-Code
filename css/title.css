@@ -64,9 +64,17 @@ body {
 }
 
 #starfield {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  background-color: #00000f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: #00000f;
+}
+
+#fullscreen{
+    background-color: #cfcfcf;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 15px;
 }
