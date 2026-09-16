@@ -32,7 +32,11 @@ body {
 
 #title{
     text-align: center;
-    font-size: 8rem;
+    font-size: 10rem;
+    position: relative;
+    z-index: 1;
+    color: #eee;
+    text-align: center;
 }
 
 #buttons{
@@ -47,6 +51,12 @@ body {
     height: 8vh;
     font-size: 1.5rem; 
     cursor: pointer;
+    background-color: #eee;
+    border: solid #000;
+}
+
+.button:hover{
+    background-color: #cfcfcf;
 }
 
 #starfield {
