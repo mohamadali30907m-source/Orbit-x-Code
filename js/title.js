@@ -10,6 +10,10 @@ var mousecoords = [];
 
 var DENSITY = 5; // "per square inch" or something maybe
 makeStars(DENSITY);
+window.addEventListener('resize', function() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+});
 
 $("#starfield").mousemove(function(evt) {
   mousecoords = [evt.clientX, evt.clientY];
