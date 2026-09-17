@@ -8,7 +8,7 @@ var adjustmentPoint = [0, 0];
 
 var mousecoords = [];
 
-var DENSITY = 5; // "per square inch" or something maybe
+var DENSITY = 5; 
 makeStars(DENSITY);
 window.addEventListener('resize', function() {
   canvas.width = window.innerWidth;
@@ -77,17 +77,15 @@ function blendColors(c0, c1, p) {
 }
 
 const fullscreen = document.getElementById('fullscreen');
-let entered_fullscreen = false;
 
 fullscreen.addEventListener('click', () => {
-    if (entered_fullscreen){
+    if (document.fullscreenElement){
         if (document.exitFullscreen) {
             document.exitFullscreen();
         } 
         else if (document.webkitExitFullscreen) {
             document.webkitExitFullscreen();
         }
-        entered_fullscreen = false;
     }
     else{
         const el = document.documentElement;
@@ -97,6 +95,5 @@ fullscreen.addEventListener('click', () => {
         else if (el.webkitRequestFullscreen) {
             el.webkitRequestFullscreen();
         }
-        entered_fullscreen = true;
     }
 });

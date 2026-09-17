@@ -35,15 +35,18 @@ body {
     font-size: 10rem;
     position: relative;
     z-index: 1;
-    color: #eee;
+    color: #cfcfcf;
     text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 255, 1);
+    -webkit-text-shadow: 0 0 10px rgba(0, 0, 255, 1); 
+    -moz-text-shadow: 0 0 10px rgba(0, 0, 255, 1);
 }
 
 #buttons{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .button{
@@ -51,15 +54,17 @@ body {
     height: 8vh;
     font-size: 1.5rem; 
     cursor: pointer;
-    background-color: #eee;
-    border:1px solid rgba(0,0,0, 0.2);
+    background-color: #cfcfcf;
+    border: 1px solid rgb(0, 0, 36);
+    box-shadow: 0 0 5px rgba(0, 0, 255, 1);
+
 }
 
 .button:hover{
-    background-color: #cfcfcf;
-    box-shadow: 0 0 5px rgba(0, 0, 255, 1);
-    -webkit-box-shadow: 0 0 5px rgba(0, 0, 255, 1); 
-    -moz-box-shadow: 0 0 5px rgba(0, 0, 255, 1);
+    background-color: #b6b5b5;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 1);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 255, 1); 
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 255, 1);
     border:1px solid rgba(0,0,255, 0.8); 
 }
 
@@ -72,9 +77,15 @@ body {
 }
 
 #fullscreen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #cfcfcf;
     position: fixed;
     top: 0;
     left: 0;
     margin: 15px;
+    padding: 15px;
+    width: 30px;
+    height: 30px;
 }
