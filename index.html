@@ -1,13 +1,38 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>orbit-x-code</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>orbit-x-code</title>
+</head>
+
+<div id="app">
+
+  <div class="inventory-bar">
+    <div class="inventory-slot"></div>
+    <div class="inventory-slot"></div>
+    <div class="inventory-slot"></div>
+    <div class="inventory-slot"></div>
+    <div class="inventory-slot"></div>
+  </div>
+
+
+  <div class="main-scene">
+    <button class="nav-arrow left-arrow">&lt;</button>
+    <button class="nav-arrow right-arrow">&gt;</button>
+    <div id="game-canvas-area"></div>
+  </div>
+
+
+  <div class="dialog-box hidden">
+    <p class="dialog-text">هنكتب هنا بق يشباب الديتا و الالغاز عند التفاعل</p>
+  </div>
+
+</div>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+
 </html>
