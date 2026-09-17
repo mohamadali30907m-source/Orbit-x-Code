@@ -97,3 +97,10 @@ fullscreen.addEventListener('click', () => {
         }
     }
 });
+
+const levels = document.getElementById('levels-button')
+
+levels.addEventListener('click', () => {
+  document.querySelectorAll("#title-screen").forEach(section => section.style.display = "none");
+  document.querySelectorAll("#levels").forEach(section => section.style.display = "block");
+});
