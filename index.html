@@ -1,13 +1,24 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>orbit-x-code</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbit</title>
+    <link rel="stylesheet" href="src/styles/title-screen.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <canvas id="starfield"></canvas>
+    <div id="title-screen">
+      <button class="button" id="fullscreen"><img src="assets/title/fullscreen.png" height="30px" width="30px"></button>
+      <h1 id="title">Orbit</h1>
+      <div id="buttons">
+        <button class="button">Start new game</button>
+        <button class="button">Planets</button>
+        <button class="button">About</button>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="module" src="src/modules/title-screen/title-screen.js"></script>
   </body>
-</html>
+</html> 
