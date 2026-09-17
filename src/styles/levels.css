@@ -1,6 +1,10 @@
 #levels{
     display: flex;
     z-index: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vmin;
 }
 
 #sun {
@@ -9,6 +13,17 @@
   position: fixed;
   right: 0;
   top: 0;
+}
+
+#mercury{
+  width: 8vmin;
+  height: 8vmin;
+}
+
+#venus{
+  width: 14vmin;
+  height: 14vmin;
+
 }
 
 #starfield {
