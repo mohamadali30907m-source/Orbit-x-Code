@@ -1,0 +1,20 @@
+#levels{
+    display: flex;
+    z-index: 1;
+}
+
+#sun {
+  width: 75vmin;
+  height: 100vmin;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+#starfield {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: #00000f;
+}
