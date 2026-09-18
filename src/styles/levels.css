@@ -5,14 +5,25 @@
     justify-content: center;
     align-items: center;
     padding-top: 10vmin;
+    width: 100%;
+    pointer-events: none;
+}
+
+#planets{
+    display: flex;
+    flex-direction: row;
+    width: calc(100vw - 40vmin);
+    align-items: center;
+    justify-content: space-between;
 }
 
 #sun {
-  width: 75vmin;
-  height: 100vmin;
-  position: fixed;
-  right: 0;
-  top: 0;
+    width: 40vmin;
+    height: 100vmin;
+    position: fixed;
+    right: 0;
+    top: 0;
+    flex-shrink: 0;
 }
 
 #mercury{
@@ -23,7 +34,36 @@
 #venus{
   width: 14vmin;
   height: 14vmin;
+}
 
+#earth{
+    width: 15vmin;
+    height: 15vmin;
+}
+
+#mars{
+    width: 10vmin;
+    height: 10vmin;
+}
+
+#jupiter{
+    width: 32vmin;
+    height: 32vmin;
+}
+
+#saturn{
+    width: 28vmin;
+    height: 28vmin;
+}
+
+#uranus{
+    width: 20vmin;
+    height: 20vmin;
+}
+
+#neptune{
+    width: 19vmin;
+    height: 19vmin;
 }
 
 #starfield {
@@ -32,4 +72,50 @@
     left: 0;
     z-index: 0;
     background-color: #00000f;
+}
+
+.locked-planet {
+  padding: 0;
+  border: none;
+  background: none;
+  pointer-events: auto;
+  flex-shrink: 1;
+}
+
+.locked-planet img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.locked-planet:hover{
+    cursor: not-allowed;
+}
+
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cfcfcf;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 15px;
+    padding: 20px;
+    width: 30px;
+    height: 30px;
+    pointer-events: auto;
+}
+
+#tooltip {
+    position: fixed;
+    display: none;
+    pointer-events: none;
+    background-color: #cfcfcf;
+    color: #000024;
+    border: 1px solid rgb(0, 0, 36);
+    box-shadow: 0 0 5px rgba(0, 0, 255, 1);
+    padding: 6px 10px;
+    font-size: 1rem;
+    z-index: 100;
 }

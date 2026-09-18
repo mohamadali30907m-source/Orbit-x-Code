@@ -19,6 +19,8 @@ attributes:
 
 - <a href="https://www.flaticon.com/free-icons/lock" title="lock icons">Lock icons created by Those Icons - Flaticon</a>
 
+- <a href="https://www.flaticon.com/free-icons/home-button" title="home button icons">Home button icons created by Magnific - Flaticon</a>
+
 Images:
 
-- <a href="https://www.science.nasa.gov" title="nasa"> NASA </a> for planets images.
+- <a href="https://www.science.nasa.gov" title="nasa"> NASA </a> and <a href="https://www.istockphoto.com" title="istock"> istockphoto </a> for planets images.

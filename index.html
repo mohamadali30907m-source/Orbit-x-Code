@@ -11,7 +11,7 @@
   <body>
     <canvas id="starfield"></canvas>
     <div id="title-screen">
-      <button class="button" id="fullscreen"><img src="assets/title/fullscreen.png" height="30px" width="30px"></button>
+      <button class="button" id="fullscreen"><img src="assets/images/title/fullscreen.png" height="30px" width="30px"></button>
       <h1 id="title">Orbit</h1>
       <div id="buttons">
         <button class="button">Start new game</button>
@@ -20,12 +20,46 @@
       </div>
     </div>
     <div id="levels">
+      <button class="button" id="home"><img src="assets/images/levels/home.png" height="30px" width="30px"></button>
+      <div id="planets">
+        <button class="locked-planet" id="neptune">
+          <img src="assets/images/levels/neptune-locked.gif">
+        </button>
+
+        <button class="locked-planet" id="uranus">
+          <img src="assets/images/levels/uranus-locked.gif">
+        </button>
+
+        <button class="locked-planet" id="saturn">
+          <img src="assets/images/levels/saturn-locked.gif">
+        </button>
+
+        <button class="locked-planet" id="jupiter">
+          <img src="assets/images/levels/jupiter-locked.gif">
+        </button>
+
+        <button class="locked-planet" id="mars">
+          <img src="assets/images/levels/mars-locked.gif">
+        </button>
+
+        <button class="locked-planet" id="earth">
+          <img src="assets/images/levels/earth-locked.gif">
+        </button>
+
+        <button class="locked-planet" id="venus">
+          <img src="assets/images/levels/venus-locked.gif">
+        </button>
+
+        <button class="locked-planet" id="mercury">
+          <img src="assets/images/levels/mercury-locked.gif">
+        </button>
+      </div>
       <img id="sun" src="assets/images/levels/sun.gif">
-      <img class="locked-planet" id="venus" src="assets/images/levels/venus-locked.gif">
-      <img class="locked-planet" id="mercury" src="assets/images/levels/mercury-locked.gif">
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="module" src="src/modules/title-screen/title-screen.js"></script>
+    <script type="module" src="src/modules/levels-screen/levels.js"></script>
     <script type="module" src="src/main.js"></script>
+    <div id="tooltip"></div>
   </body>
 </html> 
