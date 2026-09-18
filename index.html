@@ -1,6 +1,4 @@
-
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -8,11 +6,13 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>orbit-x-code</title>
-
 </head>
 
 <body>
-  <dev id="app>">
+
+  <div id="app">
+
+
     <div id="main-menu" class="screen">
       <h1>Orbit</h1>
       <div class="menu-buttons">
@@ -21,45 +21,54 @@
         <button id="btn-about">About</button>
         <button id="btn-exit">Exit</button>
       </div>
-      <div id="planets-screen" class="screen hidden">
-        <div class="planets-container">
-          <div class="planet-slot">1</div>
-          <div class="planet-slot">2</div>
-          <div class="planet-slot">3</div>
-          <div class="planet-slot">4</div>
-          <div class="planet-slot" id="planet-earth">Earth (Click)</div>
-          <div class="planet-solt">6</div>
-          <div class="planet-slot">7</div>
-          <div class="planet-slot">8</div>
+    </div>
+
+
+    <div id="planets-screen" class="screen hidden">
+      <div class="planets-container">
+        <div class="planet-slot">1</div>
+        <div class="planet-slot">2</div>
+        <div class="planet-slot">3</div>
+        <div class="planet-slot">4</div>
+        <div class="planet-slot" id="planet-earth">Earth (Click)</div>
+        <div class="planet-slot">6</div>
+        <div class="planet-slot">7</div>
+        <div class="planet-slot">8</div>
+      </div>
+    </div>
+
+
+    <div id="escape-room" class="screen hidden">
+      <div class="top-bar">
+        <div class="inventory-bar">
+          <div class="inventory-slot" data-label="Collect Plants"></div>
+          <div class="inventory-slot" data-label="Collect Keys"></div>
+          <div class="inventory-slot"></div>
+          <div class="inventory-slot"></div>
+          <div class="inventory-slot"></div>
+        </div>
+        <button id="btn-toggle-light"> Dark / Light </button>
+      </div>
+
+      <div class="main-scene">
+        <div class="astronaut-area">Astronaut Area</div>
+        <div class="plants-group">
+          <div class="plant abnormal">Abnormal Plant (Same colors)</div>
+          <div class="plant normal">Normal Plant</div>
         </div>
       </div>
-      <div id="escape-room" class="screen hidden">
-        <div class="top-bar">
-          <div class="inventory-bar">
-            <div class="inventory-slot" data-label="Collect Planets"></div>
-            <div class="inventory-slot" data-label="Collect Keys"></div>
-            <div class="inventory-slot"></div>
-            <div class="inventory-slot"></div>
-            <div class="inventory-slot"></div>
-          </div>
-          <button id="btn-toggle-light"> Dark / Light </button> 
-                  
-        </div>
-        <div class="main-scne">
-          <div class="astronaut-area"Astronaut Area></div>
-          <div class="Plants-group">
-            <div class="plant abnormal">Abnormal Plant  (Same colors)</div>
-             <div class="plant normal">Normal Plant</div>
-          </div>
-        </div>
-        <div class="bottom-bar">
-          <div id="game-timer">00:00</div>
-          <div class="puzzle-box">
-            <p>Puzzle Window (True -> Gain Key/Score+ | False -> Score to half 1/2)</p>
 
-          </div>
+      <div class="bottom-bar">
+        <div id="game-timer">00:00</div>
+        <div class="puzzle-box">
+          <p>Puzzle Window (True -> Gain Key/Score+ | False -> Score to half 1/2)</p>
         </div>
-  </dev>
-</dev>
-<script type="module" src="/src/main.js"></script>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
 </body>
+
+</html>
