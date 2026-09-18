@@ -99,8 +99,14 @@ fullscreen.addEventListener('click', () => {
 });
 
 const levels = document.getElementById('levels-button')
+const about = document.getElementById('about-button')
 
 levels.addEventListener('click', () => {
   document.querySelectorAll("#title-screen").forEach(section => section.style.display = "none");
   document.querySelectorAll("#levels").forEach(section => section.style.display = "block");
+});
+
+about.addEventListener('click', () => {
+  document.querySelectorAll("#title-screen").forEach(section => section.style.display = "none");
+  document.querySelectorAll("#about").forEach(section => section.style.display = "block");
 });

@@ -6,6 +6,7 @@
     <title>Orbit</title>
     <link rel="stylesheet" href="src/styles/title-screen.css">
     <link rel="stylesheet" href="src/styles/levels.css">
+    <link rel="stylesheet" href="src/styles/about.css">
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -16,7 +17,7 @@
       <div id="buttons">
         <button class="button">Start new game</button>
         <button class="button" id="levels-button">Planets</button>
-        <button class="button">About</button>
+        <button class="button" id="about-button">About</button>
       </div>
     </div>
     <div id="levels">
@@ -56,9 +57,22 @@
       </div>
       <img id="sun" src="assets/images/levels/sun.gif">
     </div>
+    <div id="about">
+      <button class="button" id="home2"><img src="assets/images/levels/home.png" height="30px" width="30px"></button>
+      <div class="sky">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+      </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="module" src="src/modules/title-screen/title-screen.js"></script>
     <script type="module" src="src/modules/levels-screen/levels.js"></script>
+    <script type="module" src="src/modules/about-screen/about.js"></script>
     <script type="module" src="src/main.js"></script>
     <div id="tooltip"></div>
   </body>
