@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="en">
 
 <head>
@@ -71,4 +71,148 @@
   <script type="module" src="/src/main.js"></script>
 </body>
 
-</html>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>orbit-x-code</title>
+  <style>
+            body {
+        margin: 0;
+        padding: 0;
+        background-color: #929292;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      #escape-room {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        box-shadow: border-box;
+        min-height: 100vh;
+      }
+
+    .view- title {
+      color:#000000;
+      font-size: 32px;
+      margin: 10px 0;
+      text-align: center;
+      font-weight: bold;
+    }
+     
+    .inventory-container {
+      background-color: #242424;
+      border-radius: 12px;
+      padding:15px 30px;
+      width: 90%;
+      max-width:1000px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+
+
+    }
+   
+         .inventory-bar {
+          display: flex;
+          justify-content: space-between;
+          gap: 15px;
+         }
+         .inventory-slot {
+          bacakground-color: #e0e0e0;
+          width: 100px;
+          height:100px;
+          border-radius: 15px;
+          display: flex;
+          align-items: flex-end;
+          justifiy-content: center;
+          padding-bottom: 5px;
+          box-sizing: border-box;
+
+         } 
+         .slot-text {
+          color: #000000;
+          font-size: 14px;
+          font-weight: bold:
+         }
+         .keys-container {
+          background_color: #1e1e1e;
+          border-radius:8px;
+          padding: 8px 15px;
+          display:flex;
+          align-items:center;
+          gap: 10px;
+          margin-top: 15px;
+          align-self:flex-start;
+          margin-left:5%;
+         } 
+         .key-badge {
+          background-color: #ffffff;
+          padding: 3px 8px;
+          font-size: 12px;
+          font-weight: bold;
+          border-radius: 4px;
+          border: 1px solid #000;
+         }
+         .main-sence {
+          display:flex;
+          justify-content:dspace_between;
+          align-itemsl:center;
+          width:100%;
+          margin: 40px 0;
+          padding: 0 5%;
+          box_sizing: border-box;
+         }
+         .nav-arrow {
+           background: none;
+           border: none;
+           font-size: 64px;
+           font-weight:bold;
+           color: #000000;
+           cursor: pointer;
+         }
+         .plants-laboratory {
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          flex-grow:1;
+         }
+         .plant-card {
+          background-color: #1b4d22;
+          border-radius: 12px;
+          padding: 10px; 
+          display:flex;
+          flex-direction: column;
+          align-items: center;  
+          width:130px;
+          box-shadow: 0px 4px 8px rgba (0,0,0,0.3);
+
+
+         }
+         .plant-image-box{
+          background-color: #ffffff; 
+          width: 100px;
+          height: 100px;
+          border-radius: 8px;
+          display:flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+         }
+         .planet-img {
+          width: 90px;
+          height: 90px;
+          object-fit: contain;
+         }
+         .plant-name {
+          color: #ffffff;
+          font-size: 11px;
+          font-weight: bold;
+          margin-top: 10px; 
+          text-align: center;
+         }
+  </style>
