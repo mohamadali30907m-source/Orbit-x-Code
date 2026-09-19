@@ -15,13 +15,70 @@
 }
 
 #about {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     inset: 0;
     width: 100%;
     height: 100%;
     overflow: hidden;
     pointer-events: none;
+    align-items: center;
+    justify-content: center;
 }
+
+.content{
+    z-index: 10;
+    overflow: auto;
+    width: 70vw;
+    margin: 0 auto;
+    gap: 30px;
+    pointer-events: auto;
+}
+
+#about-header{
+    display: flex;
+    text-align: center;
+    color: #cfcfcf;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 255, 1);
+    -webkit-text-shadow: 0 0 10px rgba(0, 0, 255, 1); 
+    -moz-text-shadow: 0 0 10px rgba(0, 0, 255, 1);
+    font-size: 4rem;
+}
+
+.aboutGame{
+    color: #cfcfcf;
+    text-align: left;
+    text-shadow: 0 0 10px rgba(0, 0, 255, 1);
+    -webkit-text-shadow: 0 0 10px rgba(0, 0, 255, 1); 
+    -moz-text-shadow: 0 0 10px rgba(0, 0, 255, 1);
+    font-size: 2rem;
+}
+
+a{
+    color: purple;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.point-header{
+    color: #cfcfcf;
+    text-align: left;
+    text-shadow: 0 0 10px rgba(0, 0, 255, 1);
+    -webkit-text-shadow: 0 0 10px rgba(0, 0, 255, 1); 
+    -moz-text-shadow: 0 0 10px rgba(0, 0, 255, 1);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+
+
+
 
 
 .star {
