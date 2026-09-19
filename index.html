@@ -106,12 +106,14 @@
     }
      
     .inventory-container {
-      background-color: #242424;
+      background-color: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
       border-radius: 12px;
-      padding:15px 30px;
+      padding: 15px 30px;
       width: 90%;
-      max-width:1000px;
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+      max-width: 1000px;
+      box-shadow: 0px 8px 32px rgba(0,0,0, 0.2);
 
 
     }
@@ -139,16 +141,20 @@
           font-weight: bold;
          }
          .keys-container {
-          background-color: #1e1e1e;
-          border-radius:8px;
+          background-color: rgba(255, 255, 255, 0.15);
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255, 255, 255, 0.25);
+          border-radius: 8px;
           padding: 8px 15px;
-          display:flex;
-          align-items:center;
+          display: flex;
+          align-items: center;
           gap: 10px;
           margin-top: 15px;
-          align-self:flex-start;
-          margin-left:5%;
-         } 
+          align-self: flex-start;
+          margin-left: 5%;
+          box-shadow: 0px 4px 16px rgba(0,0,0, 0.15);
+         }
+
          .key-badge {
           background-color: #ffffff;
           padding: 3px 8px;
@@ -182,17 +188,22 @@
           flex-grow:1;
          }
          .plant-card {
-          background-color: #1b4d22;
-          border-radius: 12px;
-          padding: 10px; 
-          display:flex;
-          flex-direction: column;
-          align-items: center;  
-          width:130px;
-          box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
-
-
+              border:2px solid #ffffff;
+              border-radius: 12px;
+              padding: 10px;
+              display:flex;
+              flex-direction: column;
+              align-items: center;
+                width: 130px;
+                box-shadow: 0px 4px 12px rgba(0,0,0, 0.3);
          }
+ 
+               .plants-laboratory .plant-card:nth-child(1) { background-color: #8a2be2; } 
+              .plants-laboratory .plant-card:nth-child(2) { background-color:  #ff69b4; }
+              .plants-laboratory .plant-card:nth-child(3) { background-color: #9370db; }
+              .plants-laboratory .plant-card:nth-child(4) { background-color: #00ced1; }
+              .plats -laboratory .plant-card:nth-child(5) { background-color: #ff1493; }  
+         .pl
          .plant-image-box{
           background-color: #ffffff; 
           width: 100px;
