@@ -100,6 +100,7 @@ fullscreen.addEventListener('click', () => {
 
 const levels = document.getElementById('levels-button')
 const about = document.getElementById('about-button')
+const start = document.getElementById('start-button')
 
 levels.addEventListener('click', () => {
   document.querySelectorAll("#title-screen").forEach(section => section.style.display = "none");
@@ -109,4 +110,8 @@ levels.addEventListener('click', () => {
 about.addEventListener('click', () => {
   document.querySelectorAll("#title-screen").forEach(section => section.style.display = "none");
   document.querySelectorAll("#about").forEach(section => section.style.display = "flex");
+});
+
+start.addEventListener('click', () => {
+  alert("Still under construction due to team conflicts :( Come back next week!")
 });
