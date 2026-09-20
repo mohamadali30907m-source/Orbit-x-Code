@@ -1,5 +1,11 @@
 ### Orbit x Code
 
+This is a team project, to try it click here: https://sarahzoghly.github.io/Orbit-x-Code/
+
+## AI disclaimer
+
+AI was used for some code assistance and debugging.
+
 ## Resources:
 
 code help:
