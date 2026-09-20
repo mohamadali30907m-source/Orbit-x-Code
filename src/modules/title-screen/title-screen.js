@@ -108,5 +108,5 @@ levels.addEventListener('click', () => {
 
 about.addEventListener('click', () => {
   document.querySelectorAll("#title-screen").forEach(section => section.style.display = "none");
-  document.querySelectorAll("#about").forEach(section => section.style.display = "block");
+  document.querySelectorAll("#about").forEach(section => section.style.display = "flex");
 });
