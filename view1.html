@@ -1,0 +1,259 @@
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>orbit-x-code</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #929292;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    #escape-room {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    .view-title {
+      color: #000000;
+      font-size: clamp(22px, 4vw, 32px);
+      margin: 10px 0 20px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .inventory-container {
+      background-color: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 12px;
+      padding: 15px 30px;
+      width: 90%;
+      max-width: 1000px;
+      box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.2);
+    }
+
+    .inventory-bar {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .inventory-slot {
+      background-color: #e0e0e0;
+      width: 100px;
+      height: 100px;
+      border-radius: 15px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 5px;
+    }
+
+    .slot-text {
+      color: #000000;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .keys-container {
+      background-color: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 8px;
+      padding: 8px 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 15px;
+      align-self: flex-start;
+      margin-left: max(5%, calc((100% - 1000px) / 2));
+      box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .key-badge {
+      background-color: #ffffff;
+      padding: 3px 8px;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 4px;
+      border: 1px solid #000;
+    }
+
+    .main-scene {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin: 40px 0;
+      padding: 0 5%;
+    }
+
+    .nav-arrow {
+      background: none;
+      border: none;
+      font-size: 64px;
+      font-weight: bold;
+      color: #000000;
+      cursor: pointer;
+    }
+
+    .plants-laboratory {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      flex-grow: 1;
+    }
+
+    .plant-card {
+      border: 2px solid #ffffff;
+      border-radius: 12px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 130px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .plants-laboratory .plant-card:nth-child(1)
+     { background-color: #8a2be2; }
+    .plants-laboratory .plant-card:nth-child(2) 
+    { background-color: #ff69b4; }
+    .plants-laboratory .plant-card:nth-child(3) 
+    { background-color: #9370db; }
+    .plants-laboratory .plant-card:nth-child(4)
+     { background-color: #00ced1; }
+    .plants-laboratory .plant-card:nth-child(5)
+     { background-color: #ff1493; }
+
+    .plant-image-box {
+      background-color: #ffffff;
+      width: 100px;
+      height: 100px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .plant-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .plant-name {
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: bold;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    @media (max-width: 700px) {
+      .inventory-container { padding: 12px; }
+      .inventory-bar { justify-content: center; }
+      .inventory-slot { width: 80px; height: 80px; }
+      .nav-arrow { font-size: 40px; }
+      .main-scene { padding: 0 2%; }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div id="escape-room" class="screen">
+      <h2 class="view-title">Screen View 1</h2>
+
+      <div class="inventory-container">
+        <div class="inventory-bar">
+          <div class="inventory-slot">
+            <span class="slot-text">slot 1</span></div>
+          <div class="inventory-slot">
+            <span class="slot-text">slot 2</span></div>
+          <div class="inventory-slot">
+            <span class="slot-text">slot 3</span></div>
+          <div class="inventory-slot">
+            <span class="slot-text">slot 4</span></div>
+          <div class="inventory-slot">
+            <span class="slot-text">slot 5</span></div>
+          <div class="inventory-slot">
+            <span class="slot-text">slot 6</span></div>
+        </div>
+      </div>
+
+      <div class="keys-container">
+        <div class="key-badge">Key 1</div>
+        <div class="key-badge">Key 2</div>
+        <div class="key-badge">Key 3</div>
+        <div>🔑</div>
+      </div>
+
+      <div class="main-scene">
+        <button class="nav-arrow left-arrow">&lt;</button>
+
+        <div class="plants-laboratory">
+
+          <div class="plant-card">
+            <div class="plant-image-box">
+              <img src="/images/plant-a.png" alt="Abnormal Plant A" class="plant-img">
+            </div>
+            <span class="plant-name">Abnormal Plant A</span>
+          </div>
+
+          <div class="plant-card">
+            <div class="plant-image-box">
+              <img src="/images/plant-b.png" alt="Abnormal Plant B" class="plant-img">
+            </div>
+            <span class="plant-name">Abnormal Plant B</span>
+          </div>
+
+          <div class="plant-card">
+            <div class="plant-image-box">
+              <img src="/images/plant-c.png" alt="Abnormal Plant C" class="plant-img">
+            </div>
+            <span class="plant-name">Abnormal Plant C</span>
+          </div>
+
+          <div class="plant-card">
+            <div class="plant-image-box">
+              <img src="/images/plant-x.png" alt="Normal Plant X" class="plant-img">
+            </div>
+            <span class="plant-name">Normal Plant X</span>
+          </div>
+
+          <div class="plant-card">
+            <div class="plant-image-box">
+              <img src="/images/plant-y.png" alt="Normal Plant Y" class="plant-img">
+            </div>
+            <span class="plant-name">Normal Plant Y</span>
+          </div>
+
+        </div>
+
+        <button class="nav-arrow right-arrow">&gt;</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
